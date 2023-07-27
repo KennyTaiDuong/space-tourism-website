@@ -1,11 +1,11 @@
-import { useState, createContext, useEffect } from "react";
+import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import GlobalStyle from "./globalStyles";
 import Home from "./pages/Home";
 import Crew from "./pages/crew/Crew";
-import Technology from "./pages/Technology";
+import Technology from "./pages/technology/Technology";
 import Layout from "./components/Layout";
-import Planet from "./pages/destination/Planet";
+import Destination from "./pages/destination/Destination";
 
 function App() {
   return (
@@ -14,8 +14,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
-          <Route path="destination" element={<Planet />} />
-          <Route path="destination/:id" element={<Planet />} />
+          <Route path="destination" element={<Destination />} />
+          <Route path="destination/:id" element={<Destination />} />
           <Route path="crew" element={<Crew />} />
           <Route path="crew/:id" element={<Crew />} />
           <Route path="technology" element={<Technology />} />

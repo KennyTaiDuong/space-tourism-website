@@ -6,7 +6,15 @@ const StyledNav = styled.nav`
   display: flex;
   gap: 1.6875rem;
   justify-content: center;
-  padding-bottom: 1.25rem;
+  padding: 0 0 1.25rem;
+
+  @media screen and (min-width: 425px) and (max-width: 970px) {
+    padding: 0 0 2rem;
+  }
+
+  @media screen and (min-width: 970px) {
+    justify-content: start;
+  }
 `;
 
 const StyledNavLink = styled(NavLink)`
@@ -14,6 +22,10 @@ const StyledNavLink = styled(NavLink)`
   font-size: 0.875rem;
   letter-spacing: 2.362px;
   text-decoration: 0;
+
+  @media screen and (min-width: 425px) and (max-width: 970px) {
+    font-size: 1rem;
+  }
 `;
 
 const PlanetNavbar = () => {
