@@ -41,6 +41,7 @@ const StyledSection = styled.section`
     justify-content: space-evenly;
     gap: 2rem;
     padding: 2rem;
+    align-items: start;
   }
 `;
 

@@ -6,6 +6,7 @@ import Crew from "./pages/crew/Crew";
 import Technology from "./pages/technology/Technology";
 import Layout from "./components/Layout";
 import Destination from "./pages/destination/Destination";
+import NotFound from "./components/NotFound";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route path="crew/:id" element={<Crew />} />
           <Route path="technology" element={<Technology />} />
           <Route path="technology/:id" element={<Technology />} />
+          <Route path="**" element={<NotFound />} />
         </Route>
       </Routes>
     </BrowserRouter>

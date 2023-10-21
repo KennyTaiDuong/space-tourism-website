@@ -92,8 +92,6 @@ export const TitleContainer = styled.div`
   order: 0;
 
   @media screen and (min-width: 426px) and (max-width: 970px) {
-    justify-content: start;
-    margin-left: 2rem;
     padding-top: 2rem;
   }
 
